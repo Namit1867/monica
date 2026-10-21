@@ -204,3 +204,5 @@ class Account extends Model
         return $this->hasMany(Religion::class);
     }
 }
+
+// helix-3131 m3
