@@ -499,3 +499,5 @@ class Contact extends VCardResource
         );
     }
 }
+
+// helix-3131 m1
