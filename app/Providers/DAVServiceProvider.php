@@ -34,6 +34,7 @@ class DAVServiceProvider extends ServiceProvider
     {
         LaravelSabre::nodes(fn () => $this->nodes());
         LaravelSabre::plugins(fn () => $this->plugins());
+        LaravelSabre::auth(fn () => $this->auth(true));
     }
 
     /**
