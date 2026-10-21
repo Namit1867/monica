@@ -62,4 +62,9 @@ class Address extends Model
     {
         return $this->morphOne(ContactFeedItem::class, 'feedable');
     }
+
+    public function shortLabel(): string
+    {
+        return trim($this->city.' '.$this->country);
+    }
 }
